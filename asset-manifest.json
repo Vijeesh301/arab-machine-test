@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/arab-machine-test/static/css/main.c675789f.css",
+    "main.js": "/arab-machine-test/static/js/main.b84a907f.js",
+    "static/js/787.8d9a3b8f.chunk.js": "/arab-machine-test/static/js/787.8d9a3b8f.chunk.js",
+    "static/media/Sachin-Tendulkar_(cropped).jpg": "/arab-machine-test/static/media/Sachin-Tendulkar_(cropped).28d75c83dbc802e0ee0b.jpg",
+    "static/media/images.png": "/arab-machine-test/static/media/images.b0443f5eb5c6079b334c.png",
+    "index.html": "/arab-machine-test/index.html",
+    "main.c675789f.css.map": "/arab-machine-test/static/css/main.c675789f.css.map",
+    "main.b84a907f.js.map": "/arab-machine-test/static/js/main.b84a907f.js.map",
+    "787.8d9a3b8f.chunk.js.map": "/arab-machine-test/static/js/787.8d9a3b8f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c675789f.css",
+    "static/js/main.b84a907f.js"
+  ]
+}
