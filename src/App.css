@@ -181,10 +181,6 @@
   font-size: 12px;
 }
 
-.menu-items {
-  margin-top: 10%;
-}
-
 .menu-1 {
   width: 85%;
   height: 7vh;
@@ -197,6 +193,7 @@
   cursor: pointer;
   background-color: #779ee3;
   box-shadow: 2px 0px 9px 0px rgba(71, 71, 71, 0.2);
+  margin-top: 10%;
 }
 
 .menu-item-1 {
@@ -458,6 +455,10 @@
   text-decoration: underline;
 }
 
+.span-basic-explore span {
+  cursor: pointer;
+}
+
 .cards-section-card-2 {
   display: flex;
   justify-content: space-between;
@@ -504,6 +505,7 @@
   padding: 3%;
   width: 50%;
   margin-top: 6%;
+  cursor: pointer;
 }
 
 .lets-connect button {
@@ -530,6 +532,7 @@
   padding: 3%;
   width: 50%;
   margin-top: 6%;
+  cursor: pointer;
 }
 
 /* CARDS PAGE */
@@ -3822,6 +3825,7 @@
     cursor: pointer;
     background-color: #779ee3;
     box-shadow: 2px 0px 9px 0px rgba(71, 71, 71, 0.2);
+    margin-top: 10%;
   }
 
   .menu-item-1 {

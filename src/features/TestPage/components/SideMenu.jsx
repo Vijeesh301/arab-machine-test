@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
@@ -13,8 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import profilePic from "../../../assets/images/Sachin-Tendulkar_(cropped).jpg";
 
-const SideMenu = () => {
-  const [menu, setMenu] = useState(false);
+const SideMenu = ({ menu, setMenu, selection, setSelection }) => {
   return (
     <>
       <section className="side-menu">
@@ -44,45 +42,105 @@ const SideMenu = () => {
             </section>
           </section>
           <section className="menu-items">
-            <section className="menu-1">
-              <section className="menu-item-1">
-                <FontAwesomeIcon
-                  style={{ marginRight: "5%" }}
-                  icon={faLayerGroup}
-                />
-                Dashboard
+            {selection === 0 ? (
+              <section className="menu-1">
+                <section className="menu-item-1">
+                  <FontAwesomeIcon
+                    style={{ marginRight: "5%" }}
+                    icon={faLayerGroup}
+                  />
+                  Dashboard
+                </section>
               </section>
-            </section>
-            <section className="menu-2">
-              <section className="menu-item-2">
-                <FontAwesomeIcon style={{ marginRight: "5%" }} icon={faSpa} />
-                Perks
+            ) : (
+              <section className="menu-2" onClick={() => setSelection(0)}>
+                <section className="menu-item-2">
+                  <FontAwesomeIcon
+                    style={{ marginRight: "5%" }}
+                    icon={faLayerGroup}
+                  />
+                  Dashboard
+                </section>
               </section>
-            </section>
-            <section className="menu-3">
-              <section className="menu-item-3">
-                <FontAwesomeIcon
-                  style={{ marginRight: "5%" }}
-                  icon={faPuzzlePiece}
-                />
-                Addons
+            )}
+            {selection !== 1 ? (
+              <section className="menu-2" onClick={() => setSelection(1)}>
+                <section className="menu-item-2">
+                  <FontAwesomeIcon style={{ marginRight: "5%" }} icon={faSpa} />
+                  Perks
+                </section>
               </section>
-            </section>
-            <section className="menu-4">
-              <section className="menu-item-4">
-                <FontAwesomeIcon
-                  style={{ marginRight: "5%" }}
-                  icon={faComments}
-                />
-                FAQ
+            ) : (
+              <section className="menu-1">
+                <section className="menu-item-1">
+                  <FontAwesomeIcon style={{ marginRight: "5%" }} icon={faSpa} />
+                  Perks
+                </section>
               </section>
-            </section>
-            <section className="menu-5">
-              <section className="menu-item-5">
-                <FontAwesomeIcon style={{ marginRight: "5%" }} icon={faUser} />
-                Support
+            )}
+            {selection !== 2 ? (
+              <section className="menu-3" onClick={() => setSelection(2)}>
+                <section className="menu-item-3">
+                  <FontAwesomeIcon
+                    style={{ marginRight: "5%" }}
+                    icon={faPuzzlePiece}
+                  />
+                  Addons
+                </section>
               </section>
-            </section>
+            ) : (
+              <section className="menu-1">
+                <section className="menu-item-1">
+                  <FontAwesomeIcon
+                    style={{ marginRight: "5%" }}
+                    icon={faPuzzlePiece}
+                  />
+                  Addons
+                </section>
+              </section>
+            )}
+            {selection !== 3 ? (
+              <section className="menu-4" onClick={() => setSelection(3)}>
+                <section className="menu-item-4">
+                  <FontAwesomeIcon
+                    style={{ marginRight: "5%" }}
+                    icon={faComments}
+                  />
+                  FAQ
+                </section>
+              </section>
+            ) : (
+              <section className="menu-1">
+                <section className="menu-item-1">
+                  <FontAwesomeIcon
+                    style={{ marginRight: "5%" }}
+                    icon={faComments}
+                  />
+                  FAQ
+                </section>
+              </section>
+            )}
+            {selection !== 4 ? (
+              <section className="menu-5" onClick={() => setSelection(4)}>
+                <section className="menu-item-5">
+                  <FontAwesomeIcon
+                    style={{ marginRight: "5%" }}
+                    icon={faUser}
+                  />
+                  Support
+                </section>
+              </section>
+            ) : (
+              <section className="menu-1">
+                <section className="menu-item-1">
+                  <FontAwesomeIcon
+                    style={{ marginRight: "5%" }}
+                    icon={faUser}
+                  />
+                  Support
+                </section>
+              </section>
+            )}
           </section>
         </section>
         <section className="side-menu-bottom">
@@ -138,48 +196,111 @@ const SideMenu = () => {
               </section>
             </section>
             <section className="menu-items">
-              <section className="menu-1">
-                <section className="menu-item-1">
-                  <FontAwesomeIcon
-                    style={{ marginRight: "5%" }}
-                    icon={faLayerGroup}
-                  />
-                  Dashboard
+              {selection === 0 ? (
+                <section className="menu-1">
+                  <section className="menu-item-1">
+                    <FontAwesomeIcon
+                      style={{ marginRight: "5%" }}
+                      icon={faLayerGroup}
+                    />
+                    Dashboard
+                  </section>
                 </section>
-              </section>
-              <section className="menu-2">
-                <section className="menu-item-2">
-                  <FontAwesomeIcon style={{ marginRight: "5%" }} icon={faSpa} />
-                  Perks
+              ) : (
+                <section className="menu-2" onClick={() => setSelection(0)}>
+                  <section className="menu-item-2">
+                    <FontAwesomeIcon
+                      style={{ marginRight: "5%" }}
+                      icon={faLayerGroup}
+                    />
+                    Dashboard
+                  </section>
                 </section>
-              </section>
-              <section className="menu-3">
-                <section className="menu-item-3">
-                  <FontAwesomeIcon
-                    style={{ marginRight: "5%" }}
-                    icon={faPuzzlePiece}
-                  />
-                  Addons
+              )}
+              {selection !== 1 ? (
+                <section className="menu-2" onClick={() => setSelection(1)}>
+                  <section className="menu-item-2">
+                    <FontAwesomeIcon
+                      style={{ marginRight: "5%" }}
+                      icon={faSpa}
+                    />
+                    Perks
+                  </section>
                 </section>
-              </section>
-              <section className="menu-4">
-                <section className="menu-item-4">
-                  <FontAwesomeIcon
-                    style={{ marginRight: "5%" }}
-                    icon={faComments}
-                  />
-                  FAQ
+              ) : (
+                <section className="menu-1">
+                  <section className="menu-item-1">
+                    <FontAwesomeIcon
+                      style={{ marginRight: "5%" }}
+                      icon={faSpa}
+                    />
+                    Perks
+                  </section>
                 </section>
-              </section>
-              <section className="menu-5">
-                <section className="menu-item-5">
-                  <FontAwesomeIcon
-                    style={{ marginRight: "5%" }}
-                    icon={faUser}
-                  />
-                  Support
+              )}
+              {selection !== 2 ? (
+                <section className="menu-3" onClick={() => setSelection(2)}>
+                  <section className="menu-item-3">
+                    <FontAwesomeIcon
+                      style={{ marginRight: "5%" }}
+                      icon={faPuzzlePiece}
+                    />
+                    Addons
+                  </section>
                 </section>
-              </section>
+              ) : (
+                <section className="menu-1">
+                  <section className="menu-item-1">
+                    <FontAwesomeIcon
+                      style={{ marginRight: "5%" }}
+                      icon={faPuzzlePiece}
+                    />
+                    Addons
+                  </section>
+                </section>
+              )}
+              {selection !== 3 ? (
+                <section className="menu-4" onClick={() => setSelection(3)}>
+                  <section className="menu-item-4">
+                    <FontAwesomeIcon
+                      style={{ marginRight: "5%" }}
+                      icon={faComments}
+                    />
+                    FAQ
+                  </section>
+                </section>
+              ) : (
+                <section className="menu-1">
+                  <section className="menu-item-1">
+                    <FontAwesomeIcon
+                      style={{ marginRight: "5%" }}
+                      icon={faComments}
+                    />
+                    FAQ
+                  </section>
+                </section>
+              )}
+              {selection !== 4 ? (
+                <section className="menu-5" onClick={() => setSelection(4)}>
+                  <section className="menu-item-5">
+                    <FontAwesomeIcon
+                      style={{ marginRight: "5%" }}
+                      icon={faUser}
+                    />
+                    Support
+                  </section>
+                </section>
+              ) : (
+                <section className="menu-1">
+                  <section className="menu-item-1">
+                    <FontAwesomeIcon
+                      style={{ marginRight: "5%" }}
+                      icon={faUser}
+                    />
+                    Support
+                  </section>
+                </section>
+              )}
             </section>
           </section>
           <section className="side-menu-bottom">
