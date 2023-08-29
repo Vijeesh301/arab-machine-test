@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/arab-machine-test/static/css/main.1df96e16.css",
-    "main.js": "/arab-machine-test/static/js/main.f3772a44.js",
+    "main.css": "/arab-machine-test/static/css/main.4921ce65.css",
+    "main.js": "/arab-machine-test/static/js/main.047db420.js",
     "static/js/787.8d9a3b8f.chunk.js": "/arab-machine-test/static/js/787.8d9a3b8f.chunk.js",
     "static/media/Sachin-Tendulkar_(cropped).jpg": "/arab-machine-test/static/media/Sachin-Tendulkar_(cropped).28d75c83dbc802e0ee0b.jpg",
     "static/media/images.png": "/arab-machine-test/static/media/images.b0443f5eb5c6079b334c.png",
     "index.html": "/arab-machine-test/index.html",
-    "main.1df96e16.css.map": "/arab-machine-test/static/css/main.1df96e16.css.map",
-    "main.f3772a44.js.map": "/arab-machine-test/static/js/main.f3772a44.js.map",
+    "main.4921ce65.css.map": "/arab-machine-test/static/css/main.4921ce65.css.map",
+    "main.047db420.js.map": "/arab-machine-test/static/js/main.047db420.js.map",
     "787.8d9a3b8f.chunk.js.map": "/arab-machine-test/static/js/787.8d9a3b8f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1df96e16.css",
-    "static/js/main.f3772a44.js"
+    "static/css/main.4921ce65.css",
+    "static/js/main.047db420.js"
   ]
 }
