@@ -844,7 +844,7 @@
   }
 }
 
-@media screen and (max-width: 280px) and (min-width: 200px) {
+@media screen and (max-width: 299px) and (min-width: 200px) {
   .side-mebu {
     display: none;
   }
